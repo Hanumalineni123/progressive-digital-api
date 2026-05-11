@@ -6,8 +6,7 @@
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
-    "dev": "node --watch src/server.js",
-    "db:migrate": "psql $DATABASE_URL -f ../database/001_create_leads.sql"
+    "dev": "node --watch src/server.js"
   },
   "engines": {
     "node": ">=20.0.0"
@@ -20,6 +19,8 @@
     "helmet": "^7.1.0",
     "pino": "^9.2.0",
     "pino-pretty": "^11.2.1",
-    "postgres": "^3.4.4"
+    "postgres": "^3.4.4",
+    "stripe": "^15.7.0",
+    "resend": "^3.2.0"
   }
 }
