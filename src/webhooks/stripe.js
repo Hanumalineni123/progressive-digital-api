@@ -20,7 +20,7 @@
 
 import express from 'express';
 import Stripe from 'stripe';
-import { saveEnrollment, updateEnrollmentStatus } from '../lib/db.js';
+import { saveEnrollment, updateEnrollmentStatus } from '../lib/db-enrollments.js';
 import { sendEnrollmentConfirmation } from '../jobs/emailQueue.js';
 import { logger } from '../lib/logger.js';
 
