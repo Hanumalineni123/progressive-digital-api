@@ -9,7 +9,7 @@ const sql = postgres(process.env.DATABASE_URL, {
   max: 10,                    // max pool connections
   idle_timeout: 30,           // drop idle connections after 30s
   connect_timeout: 10,        // fail fast if DB is unreachable
-  ssl: process.env.NODE_ENV === 'production' ? { rejectUnauthorized: true } : false,
+  ssl: process.env.NODE_ENV === 'production' ? { rejectUnauthorized: false } : false,
 });
 
 // ---------------------------------------------------------------------------
